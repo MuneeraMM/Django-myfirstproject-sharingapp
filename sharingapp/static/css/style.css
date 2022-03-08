@@ -1,0 +1,399 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    height: 745px;
+    background: url( ../images/banner-edit.jpg);
+    background-size:cover;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 1120px;
+    
+}
+.nav{
+     /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    
+}
+.nav .logo{
+    color:#666;
+    display: flex;
+    align-items: center;
+}
+.nav-bar .nav-items{
+    display: flex;
+    align-items: center;
+}
+.nav-bar .nav-items a{
+    font-weight: 800;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 20px;
+    color: black;
+}
+.nav-bar .nav-items a:hover{
+    color:rgb(240, 12, 202);
+    text-decoration-line:underline;
+}
+
+/* hamburger */
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin:5px auto;
+    background-color: black;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+/* bannner */
+.banner{
+    display: flex;
+    width: 50%;
+    height: 645px;
+    justify-content: center;
+}
+.details{
+    height: 645px;
+    display: flex;
+    align-items: center; 
+}
+.name-title h1{
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #000;
+}
+.name-title h3{
+    font-size: 30px;
+    color: #000;
+}
+
+/* skills */
+.skills{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    height: 420px;
+    margin-bottom: 100px;
+}
+
+.my-skills{
+    display: flex;
+    height: 418px;
+}
+
+.my-image{
+    width: 50%;
+    height: 418px;
+    margin-right: 50px;
+}
+
+.my-image img{
+    width: 100%;
+    height: 350px;
+    margin-top: 50px;
+}
+.skills .skill-list{
+    width: 50%;
+}
+.skills .skill-list .list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+    row-gap: 50px;
+}
+.skill-list h1{
+    font-size: 40px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.skill h2{
+    font-size: 35px;
+}
+
+/* services */
+.mainServices{
+    margin-top: 50px;
+    text-align: center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 80px;
+}
+.mainServices p{
+    font-weight:500;
+    font-size: 17px;
+}
+.mainServices h1{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.service-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    margin: 30px;
+}
+.service{
+    padding: 30px;
+    margin: 20px;
+    background-color: rgb(243, 246, 247);
+}
+.service h4{
+    padding-bottom: 12px;
+    font-size: 25px;
+    font-weight:600;
+}
+.service:hover{
+    border:2px solid black;
+}
+.fas{
+    font-size: 40px;
+    color: blue;
+    padding-bottom: 20px;
+}
+
+/* portfolio */
+
+.portfolio{
+    text-align: center;
+    margin: 40px;
+    margin-top: 50px;
+}
+.portfolio h1{
+    font-size: 40px;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.port-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.portfo{
+    margin-bottom: 25px;
+}
+.portfo :hover{
+    transform: scale(1.1);
+    z-index: 1;
+}
+.portfo img{
+    height: 400px;
+    width: 400px;
+    padding-bottom: 40px;
+    
+}
+/* contact */
+.contact{
+    background-color: #f8c195;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-info{
+    display: flex;
+    width: 50%;
+    
+}
+.contact-info h2{
+    margin-bottom: 10px;
+    font-size: 21px;
+    margin-top: 10px;
+    color:rgb(240, 12, 202); ;
+}
+.phone{
+    text-align: center;
+    width: 50%;
+}
+.mail{
+    text-align: center;
+}
+
+
+/* responsive */
+
+
+@media screen and (min-width: 312px) and (max-width: 768px){
+    /* body{
+        background-color: darkblue;
+    } */
+    .nav-bar{
+        background-position-x: -765px;
+        /* padding: 28px; */
+    }
+    .container{
+        width: 100%;
+        padding: 40px;
+    }
+    .name-title h1{
+        font-size: 40px;
+    }
+    .name-title h3{
+        font-size: 25px;
+    }
+    .service-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .port-grid{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .my-skills{
+        width: 100%;
+        display: flex;
+        padding: 15px;
+    }
+    .my-image img{
+        padding: 20px;
+        width: auto;
+        height: 200px;
+        margin-top: 25px;
+    }
+    .skill-list{
+        display: flex;
+        align-items: center;
+    }
+    .skill-list h1{
+        /* margin-top: -100px; */
+        display: flex;
+        text-align: center;
+        margin-left: -100px;
+        /* align-items:flex-start; */
+        margin-top: -400px;
+    }
+    
+    .skills .skill-list .list {
+        display: flex;
+        margin-top: 260px;
+        flex-wrap: wrap;
+        margin-left: -200px;
+        row-gap: 20px;
+        column-gap: 40px;
+        font-size: 12px;
+        
+    }
+    .mainServices{
+        margin-top: 15px;
+        
+    }
+    /* .portfolio{
+        padding-right: -500px;
+    } */
+    .portfo{
+        /* margin-left: -30px;
+        margin-right: -30px; */
+        margin-right:40px;
+        width: auto;
+        /* padding-right: -400px;
+        margin-right: -100px; */
+        /* padding-right:50px; */
+    }
+    .contact-info{
+        
+        flex-wrap: wrap;
+        gap:2px
+        
+    }
+    .mail{
+        padding-bottom: 10px;
+    }
+    /* .phone{
+        align-items: flex-start;
+        margin-left: 10px;
+        font-size:10px;
+    } */
+
+    /* hamburger */
+    .nav-menu{
+        position: fixed;
+        z-index: 100;
+        background-color: white;
+        left: -100%;
+        top: 5rem;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+        flex-direction: column;
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .menu-item{
+        margin: 30px 0;
+    }
+    .hamburger{
+        
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(-45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(45deg);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    /* body{
+        background: crimson;
+    } */
+    .nav-bar{
+        
+        background: position x -550px; ;
+    }
+    .container{
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+    .skill-list{
+        margin-top: -25px;
+    }
+    .skills .skill-list .list {
+        row-gap: 25px;
+    }
+    .my-image img{
+        height: 315px;
+        margin-top: 55px;
+        
+    }
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .port-grid {
+        grid-template-columns: repeat(2, 1fr);   
+    }
+    .portfo{
+        align-items: center;
+    }
+    .portfo img{
+        width: 90%;
+    }
+    .hamburger{
+        display: none;
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .hamburger{
+        display: none;
+    }
+}

@@ -1,0 +1,147 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script src="https://kit.fontawesome.com/865f28c3b2.js" crossorigin="anonymous"></script>
+    <!-- <script src="/script.js"></script> -->
+</head>
+<body>
+    <section class="nav-bar">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <h1>muneera</h1>
+                </div>
+                <div class="nav-items">
+                    <ul class="nav-menu">
+                        <!-- <li class="menu-item">
+                            <a href="#"></a></li> -->
+                        <li class="menu-item">
+                            <a href="#about" class="nav-link">About</a></li>
+                        <li class="menu-item">
+                            <a href="#service" class="nav-link">Service</a></li>
+                        <li class="menu-item">
+                            <a href="#portfolio" class="nav-link">Portfolio</a></li>
+                        <li class="menu-item">
+                            <a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+            </div>
+        <div class="banner">
+            <div class="details">
+                <div class="name-title">
+                    <h1>Hai, I am Muneera</h1>
+                    <h3>Full-stack Developer</h3>
+                </div>
+                <div class="no"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- skills -->
+    <section class="skills">
+        <div class="container">
+            <div class="my-skills">
+                <div class="my-image">
+                    <img src="{% static './images/imageskill.jpg' %}" alt="">
+                </div>
+                <div class="skill-list">
+                        <h1 id="about">Skills</h1>
+                    <div class="list">
+                        <h2>Python</h2>
+                        <h2>html&css</h2>
+                        <h2>JavaScript</h2>
+                        <h2>Django</h2>
+                        <h2>Flask</h2>
+                        <h2>Python</h2>
+                        <h2>html&css</h2>
+                        <h2>JavaScript</h2>
+                        <h2>Django</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <section class="mainServices">
+        <h1 id="service">Services</h1>
+        <p>We help you take the big step.</p>
+        <div class="service-grid">
+            <div class="service">
+                <i class="fas fa-file-code"></i>
+                <h4>Web Development</h4>
+                <p>Build a scalabe web app which helps you skyrocket your business. </p>
+            </div>
+            <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h4>Web Design</h4>
+                <p>Elegent and well structured Web and Mobile App design.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Mobile App Development</h4>
+                <p>Fully functional mobile app which takes your business to the next level </p>
+            </div>
+            <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h4>Digital Marketing</h4>
+                <p>Proven marketing strategy to put your brand on the map.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-lightbulb"></i>
+                <h4>Branding</h4>
+                <p>Effective strategy to create positive perception for your business </p>
+            </div>
+            <div class="service">
+                <i class="fas fa-bezier-curve"></i>
+                <h4>Graphic Designing</h4>
+                <p>Creative and breathtaking designs to make your brand alive.</p>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio -->
+    <section class="portfolio">
+        <h1 id="portfolio">Portfolio</h1>
+        <div class="port-grid">
+            <div class="portfo">
+                <img src="{% static  './images/dw9.jpg' %}" alt="">
+            </div>
+            <div class="portfo">
+                <img src="{% static  './images/download1.jpg' %}" alt="">
+            </div>
+            <div class="portfo">
+                <img src="{% static  './images/download7.jpg' %}" alt="">
+            </div>
+            <div class="portfo">
+                <img src="{% static  './images/dw4.jpg' %}" alt="">
+            </div>
+            <div class="portfo">
+                <img src="{% static  './images/dw8.jpg' %}" alt="">
+            </div>
+            <div class="portfo">
+                <img src="{% static  './images/download8.jpg' %}" alt="">
+            </div>
+        </div>
+    </section>
+    <footer class="contact">
+        <div class="contact-info">
+        <div class="phone">
+            <h2>Phone:+9108460000</h2></div>
+        <div class="mail">  
+            <h2>Email:abcd@gmail.com</h2></div>
+        </div>
+
+    </footer>
+    <script src="{% static 'script.js' %}"></script>
+    </body>
+</html>

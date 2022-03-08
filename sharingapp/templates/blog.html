@@ -1,0 +1,8 @@
+{% extends 'main.html' %}
+
+{% block content %}
+<h1>Blog</h1>
+<h2>{{post.caption}}</h2>
+<img src="{{post.image.url}}" alt="">
+<p><b>{{post.description}}</b></p>
+{% endblock content %}
