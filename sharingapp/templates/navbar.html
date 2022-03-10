@@ -1,14 +1,20 @@
 <header>
     <div class="left-nav">
-        <h1>logo</h1>
+        <a href="{% url 'home' %}"><h1>logo</h1></a>
     </div>
     <div class="right-nav">
         <ul>
-            <li>Home</li>
+            <li><a href="{% url 'home' %}">Home</a></li>
             <li>Service</li>
             <li>Contact us</li>
             <li>About us</li>
-            <li><a href="{% url 'createpost'  %}">Create new post</a></li>
+            <li><a href="{% url 'createpost' %}">Create new post</a></li>
+            
+            {% if request.user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+            <li><a href="{% url 'signup' %}">Signup</a></li>
+            {% endif %}
         </ul>
     </div>
 </header>
