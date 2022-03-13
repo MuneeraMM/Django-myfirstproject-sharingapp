@@ -1,6 +1,5 @@
 from django.shortcuts import render,redirect
 from .forms import techolasUserForm
-# Create your views here.
 from django.contrib.auth import authenticate
 from django.contrib.auth import logout as django_logout
 from django.contrib.auth import login as auth_login
@@ -39,7 +38,6 @@ def login(request):
         username = request.POST['username']
         password = request.POST['password']
 
-        
         user = authenticate(request, username=username,password=password)
         if user is not None:
             auth_login(request, user)

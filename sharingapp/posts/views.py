@@ -16,11 +16,15 @@ def blog(request,pk):
 
 from .forms import PostForm
 def createpost(request):
-    form=PostForm()
+
+    user = request.user
+
+    form = PostForm()
     if request.method=='POST':
         form=PostForm(request.POST,request.FILES)
         if form.is_valid():
             post=form.save()
+            post.user = user
             post.save()
             return redirect('home')
     context={'form':form}
